@@ -1,8 +1,8 @@
 (ns ferry.client-test
   (:require [clojure.test :refer :all]
             [ferry.client :refer :all]
-            [clojure.data.json :as json])
-  (:use midje.sweet))
+            [midje.sweet :refer :all]
+            [clojure.data.json :as json]))
 
 (facts "parse-json-body"
        (fact "with body"
