@@ -3,9 +3,12 @@ ferry
 
 [![Build Status](https://img.shields.io/travis/blom/ferry/master.svg)][travis]
 
+[![Clojars Project](http://clojars.org/ferry/latest-version.svg)][clojars]
+
 Clojure library for [DigitalOcean's API][digitalocean-api].
 
 [travis]: https://travis-ci.org/blom/ferry
+[clojars]: https://clojars.org/ferry
 [digitalocean-api]: https://developers.digitalocean.com/documentation/v2/
 
 Examples
