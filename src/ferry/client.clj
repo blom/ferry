@@ -21,6 +21,7 @@
                                 "Content-Type" "application/json"}
                       :body (and params (json/write-str params))
                       :timeout 10000}))))
+
 (defn account
   [token]
   (request token :get "/account"))
