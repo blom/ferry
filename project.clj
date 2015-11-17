@@ -1,4 +1,4 @@
-(defproject ferry "0.0.0"
+(defproject ferry "0.1.0"
   :description "Library for DigitalOcean's API."
   :url "https://github.com/blom/ferry"
   :license {:name "ISC"
