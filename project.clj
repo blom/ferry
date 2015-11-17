@@ -6,6 +6,6 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [http-kit "2.1.19"]
                  [org.clojure/data.json "0.2.6"]]
-  :profiles {:dev {:dependencies [[midje "1.7.0"]]}}
-  :plugins [[codox "0.8.13"]
-            [lein-midje "3.1.3"]])
+  :profiles {:dev {:dependencies [[midje "1.8.2"]]}}
+  :plugins [[lein-codox "0.9.0"]
+            [lein-midje "3.2"]])
