@@ -2,8 +2,7 @@ ferry
 =====
 
 [![Build Status](https://img.shields.io/travis/blom/ferry/master.svg)][travis]
-
-[![Clojars Project](http://clojars.org/ferry/latest-version.svg)][clojars]
+[![Clojars Project](https://img.shields.io/clojars/v/ferry.svg)][clojars]
 
 Clojure library for [DigitalOcean's API][digitalocean-api].
 
