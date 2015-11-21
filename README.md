@@ -75,6 +75,13 @@ Examples
 (ferry/regions token)
 
 (ferry/sizes token)
+
+(ferry/floating-ips token)
+(ferry/create-floating-ip token {:droplet_id droplet-id})
+(ferry/create-floating-ip token {:region "lon1"})
+(ferry/floating-ip token ip-address)
+(ferry/assign-floating-ip token ip-address {:droplet_id droplet-id})
+(ferry/unassign-floating-ip token ip-address)
 ```
 
 All functions return a future and must be dereferenced to get the result:

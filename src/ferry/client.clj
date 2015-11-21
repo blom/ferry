@@ -194,3 +194,33 @@
 (defn sizes
   [token]
   (request token :get "/sizes"))
+
+(defn floating-ips
+  [token]
+  (request token :get "/floating_ips"))
+
+(defn create-floating-ip
+  [token params]
+  (request token :post "/floating_ips" params))
+
+(defn floating-ip
+  [token ip-address]
+  (request token :get (str "/floating_ips/" ip-address)))
+
+(defn delete-floating-ip
+  [token ip-address]
+  (request token :delete (str "/floating_ips/" ip-address)))
+
+(defn assign-floating-ip
+  [token ip-address params]
+  (request token
+           :post
+           (str "/floating_ips/" ip-address "/actions")
+           (assoc params :type "assign")))
+
+(defn unassign-floating-ip
+  [token ip-address]
+  (request token
+           :post
+           (str "/floating_ips/" ip-address "/actions")
+           {:type "unassign"}))
